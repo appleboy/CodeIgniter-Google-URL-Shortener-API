@@ -1,0 +1,38 @@
+CodeIgniter Google URL Shortener API Library
+===============
+
+Welcome to the home of the Google URL Shortener API Library, a project that will help you to shorten, expand, analytics long URL.
+
+What is the Google URL Shortener API?
+===============
+The Google URL Shortener at goo.gl is a service that takes long URLs and squeezes them into fewer characters to make a link that is easier to share, tweet, or email to friends.
+The Google URL Shortener API allows you to develop applications that interface with this service. You can use simple HTTP methods to create, inspect, and manage goo.gl short URLs from your desktop, mobile, or web application.
+
+ref : http://code.google.com/intl/zh-TW/apis/urlshortener/
+
+INSTALLATION
+===============
+
+Download all file from this site.
+    $ https://appleboy@github.com/appleboy/CodeIgniter-Google-URL-Shortener-API.git
+    $ git clone git://github.com/appleboy/CodeIgniter-Google-URL-Shortener-API.git
+
+Move the files to their corresponding places within your codeigniter application directory.
+    $ copy config/google_url_api.php your_application/config/
+    $ copy controller/google_url.php your_application/controller/
+    $ copy libraries/Google_url_api.php your_application/libraries/
+    
+Open config/google_url_api.php file, and configure your shorten api key
+    $config['google_api_key'] = "xxxxx";
+    
+Test your controller file: google_url.php
+    http://localhost/google_url/
+    
+If you're having problems, then enable debugging in your controller code:
+    $this->google_url_api->enable_debug(TRUE);    
+    
+COPYRIGHT AND LICENCE
+===============
+
+Copyright (C) 2011 Bo-Yi Wu §d¬f¼Ý ( appleboy )
+ 
