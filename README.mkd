@@ -34,5 +34,5 @@ If you're having problems, then enable debugging in your controller code:
 COPYRIGHT AND LICENCE
 ===============
 
-Copyright (C) 2011 Bo-Yi Wu §d¬f¼İ ( appleboy )
+Copyright (C) 2011 Bo-Yi Wu å³æŸæ¯… ( appleboy )
  
