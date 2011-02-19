@@ -42,7 +42,9 @@ class Google_url extends CI_Controller {
         $url = "http://goo.gl/fbsS";
         echo '<h2>Analytics Example</h2>';         
         $analytics_url = $this->google_url_api->analytics($url);
-        echo 'Created: ' . $analytics_url->created . "<br />";
+        echo 'Response code: ' . $this->google_url_api->get_http_status() . "<br />";
+        echo 'Response status: ' . $analytics_url->status . "<br />";
+        echo 'Date Created: ' . date("Y-m-d H:i:s", strtotime($analytics_url->created)) . "<br />";
         $this->_print($analytics_url);
         
     }
