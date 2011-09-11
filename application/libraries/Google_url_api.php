@@ -107,10 +107,28 @@ class Google_url_api {
             if($this->_enable_debug) echo $api_url . "<br />";
         }
 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+        /* WARNING: this would prevent curl from detecting a 'man in the middle' attack */
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
         $result = curl_exec($ch);
-        
+
+        /* show error message */
+        if($this->_enable_debug)
+        {
+            if(!curl_errno($ch))
+            {
+                $info = curl_getinfo($ch);
+                echo 'Took ' . $info['total_time'] . ' seconds to send a request to ' . $info['url'] . "<br />";
+            }
+            else
+            {
+                echo 'Curl error: ' . curl_error($ch) . "<br />";
+            }
+        }
+
         $this->http_response = $result;
         $this->http_status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
