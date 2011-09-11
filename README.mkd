@@ -14,25 +14,29 @@ INSTALLATION
 ===============
 
 Download all file from this site.
+
     $ https://appleboy@github.com/appleboy/CodeIgniter-Google-URL-Shortener-API.git
     $ git clone git://github.com/appleboy/CodeIgniter-Google-URL-Shortener-API.git
 
 Move the files to their corresponding places within your codeigniter application directory.
+
     $ copy config/google_url_api.php your_application/config/
     $ copy controller/google_url.php your_application/controller/
     $ copy libraries/Google_url_api.php your_application/libraries/
     
 Open config/google_url_api.php file, and configure your shorten api key
+
     $config['google_api_key'] = "xxxxx";
     
 Test your controller file: google_url.php
+
     http://localhost/google_url/
     
 If you're having problems, then enable debugging in your controller code:
+
     $this->google_url_api->enable_debug(TRUE);    
     
 COPYRIGHT AND LICENCE
 ===============
 
-Copyright (C) 2011 Bo-Yi Wu 吳柏毅 ( appleboy )
- 
+Copyright (C) 2011 Bo-Yi Wu 吳柏毅 ( appleboy AT gmail.com )
