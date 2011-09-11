@@ -107,7 +107,7 @@ class Google_url_api {
             if($this->_enable_debug) echo $api_url . "<br />";
         }
 
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 
         $result = curl_exec($ch);
         
@@ -147,4 +147,7 @@ class Google_url_api {
         $this->_enable_debug = (bool) $debug;
     }    
 }
-?>
+
+/* End of file Google_url_api.php */
+/* Location: ./application/libraries/Google_url_api.php */
+

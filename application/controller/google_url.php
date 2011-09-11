@@ -63,4 +63,7 @@ class Google_url extends CI_Controller {
         echo '<pre>';
     }    
 }
-?>
+
+/* End of file google_url.php */
+/* Location: ./application/controller/google_url.php */
+
