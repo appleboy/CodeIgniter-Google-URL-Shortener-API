@@ -10,6 +10,11 @@ The Google URL Shortener API allows you to develop applications that interface w
 
 ref : http://code.google.com/intl/zh-TW/apis/urlshortener/
 
+Spark Install
+===============
+
+Please referrer from http://getsparks.org/packages/google-url-shortener/versions/HEAD/show
+
 INSTALLATION
 ===============
 
