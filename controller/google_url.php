@@ -5,7 +5,7 @@ class Google_url extends CI_Controller {
     function __construct()
     {
         parent::__construct();
-        $this->load->spark('google-shortener-api');
+        $this->load->library('google_url_api');
     }
     
     function index()
