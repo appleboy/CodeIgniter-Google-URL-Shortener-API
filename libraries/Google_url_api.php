@@ -21,6 +21,7 @@ class Google_url_api {
     function __construct()
     {
         $this->_obj =& get_instance();
+        $this->_obj->load->config('ion_auth');
         $this->_api_url = $this->_obj->config->item("google_api_url");
         $this->_api_key = $this->_obj->config->item("google_api_key");
         $this->_api_url = $this->_api_url . '?key=' . $this->_api_key;
