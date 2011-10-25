@@ -39,4 +39,4 @@ If you're having problems, then enable debugging in your controller code:
 COPYRIGHT AND LICENCE
 ===============
 
-Copyright (C) 2011 Bo-Yi Wu 吳柏毅 ( appleboy AT gmail.com )
+Copyright (C) 2011 Bo-Yi Wu ( appleboy AT gmail.com )
