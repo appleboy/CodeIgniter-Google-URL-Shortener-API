@@ -24,35 +24,29 @@ USAGE
 
 shorten example
 
-```php
-echo '<h2>Shorten Example</h2>';
-$short_url = $this->google_url_api->shorten($url);
-echo $url . " => " . $short_url->id . "<br />";
-echo 'Response code: ' . $this->google_url_api->get_http_status();
-```
+    echo '<h2>Shorten Example</h2>';
+    $short_url = $this->google_url_api->shorten($url);
+    echo $url . " => " . $short_url->id . "<br />";
+    echo 'Response code: ' . $this->google_url_api->get_http_status();
 
 expand example
 
-```php
-$url = 'http://goo.gl/fbsS';
-echo '<h2>Expand Example</h2>';
-$expand_url = $this->google_url_api->expand($url);
-echo $url . " => " . $expand_url->longUrl . "<br />";
-echo 'Response code: ' . $this->google_url_api->get_http_status() . "<br />";
-echo 'Response status: ' . $expand_url->status;
-```
+    $url = 'http://goo.gl/fbsS';
+    echo '<h2>Expand Example</h2>';
+    $expand_url = $this->google_url_api->expand($url);
+    echo $url . " => " . $expand_url->longUrl . "<br />";
+    echo 'Response code: ' . $this->google_url_api->get_http_status() . "<br />";
+    echo 'Response status: ' . $expand_url->status;
 
 analytics example
 
-```php
-$url = "http://goo.gl/fbsS";
-echo '<h2>Analytics Example</h2>';         
-$analytics_url = $this->google_url_api->analytics($url);
-echo 'Response code: ' . $this->google_url_api->get_http_status() . "<br />";
-echo 'Response status: ' . $analytics_url->status . "<br />";
-echo 'Date Created: ' . date("Y-m-d H:i:s", strtotime($analytics_url->created)) . "<br />";
-print_r($analytics_url);
-```
+    $url = "http://goo.gl/fbsS";
+    echo '<h2>Analytics Example</h2>';         
+    $analytics_url = $this->google_url_api->analytics($url);
+    echo 'Response code: ' . $this->google_url_api->get_http_status() . "<br />";
+    echo 'Response status: ' . $analytics_url->status . "<br />";
+    echo 'Date Created: ' . date("Y-m-d H:i:s", strtotime($analytics_url->created)) . "<br />";
+    print_r($analytics_url);
     
 If you're having problems, enable debugging mode in your controller:
 
