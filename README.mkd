@@ -13,7 +13,7 @@ ref : http://code.google.com/intl/zh-TW/apis/urlshortener/
 INSTALLATION
 ===============
 
-Please download file form http://getsparks.org/packages/google-url-shortener/
+Please download file form http://getsparks.org/packages/google-url-shortener/versions/HEAD/show
     
 Open config/google_url_api.php file, and configure your shorten api key
 
